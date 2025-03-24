@@ -9,18 +9,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="task-input">
-            <input type="text" id="taskInput" placeholder="Add your task here...">
-            <button onclick="addTask()">Add Task</button>
+    <section>
+        <h1 class="heading">Task App</h1>
+        <div class="container">
+            <div class="task-input">
+                <input type="text" id="taskInput" class="input-text" placeholder="Add your task here...">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <div class="task-list">
+                <h3 class="today-task">Today's tasks</h3>
+                <ul id="tasks">
+                </ul>
+            </div>
         </div>
-        <div class="task-list">
-            <h3>Today's tasks</h3>
-            <ul id="tasks">
-                <!-- Tasks will be added dynamically -->
-            </ul>
-        </div>
-    </div>
+    </section>
     <script src="./assets/js/index.js"></script>
 </body>
 

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,21 +19,36 @@ body {
     width: 350px;
 }
 
-h2 {
+.heading {
     text-align: center;
-}
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #808080;
 
-.brand {
-    background-color: red;
-    color: white;
-    padding: 3px 6px;
-    border-radius: 4px;
 }
 
 .task-input {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+.input-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.today-task {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
 }
 
 .task-input input {
@@ -42,12 +59,17 @@ h2 {
 }
 
 .task-input button {
-    background-color: #007bff;
+    background: linear-gradient(97.42deg, #128DFF -4.95%, #1444EF 109.04%);
     color: white;
+    font-family: "Inter", sans-serif;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.task-input button:hover {
+    background: linear-gradient(97.42deg, #1444EF -4.95%,#128DFF 109.04%);
 }
 
 .task-list ul {
@@ -82,18 +104,29 @@ h2 {
 }
 
 .check {
-    color: green;
-    border: 2px solid gray;
+    color: #808080;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.check:hover {
+    color: #000000;
+    border: 2px solid #000000;
     border-radius: 50%;
     padding: 2px 6px;
 }
 
 .check.completed {
-    background-color: green;
-    color: white;
-    border-color: green;
+    background-color: white;
+    color: #128DFF;
+    border-color: #128DFF;
 }
 
 .delete {
-    color: red;
+    color: #808080;
+}
+
+.delete:hover {
+    color: #000000;
 }
